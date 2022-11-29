@@ -27,6 +27,7 @@ if (count.Length <=3)
 if (j==0)
    {
     Console.Write($"не может быть создан");
+    return;
    }
 for (int i = 0; i < j; i++)
 {
