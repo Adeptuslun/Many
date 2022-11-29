@@ -2,15 +2,28 @@
 int n = Convert.ToInt32(Console.ReadLine());
 
   String[] array = new string[n];
+  List<string> Limit = new List<string>();
   for (int i = 0; i < n; i++)
   {
-    Console.WriteLine("Введите значение") ;
+    Console.WriteLine($"Введите значение");
     string count=Console.ReadLine();
     array[i] = count;
-
-    Console.Write($"{array[i]} ");
+if (count.Length <=3)
+    {
+      Limit.Add(count);
+    }
+    
   }
-List<string> Limit = new List<string>();
+  Console.WriteLine();
+  String[] Arry = new string[Limit.Count];
+  for (int i = 0; i < Arry.Length; i++)
+  {
+    Arry[i] = Limit[i];
+    Console.Write($"{Arry[i]}/");
+  }
+
+  Console.WriteLine();
+/*List<string> Limit = new List<string>();
 for (int i = 0; i < n; i++)
   {
    
@@ -22,4 +35,4 @@ for (int i = 0; i < n; i++)
 
     Console.Write($"{array[i]} ");
   }
-  Console.WriteLine();
+  Console.WriteLine();*/
