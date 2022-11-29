@@ -10,3 +10,16 @@ int n = Convert.ToInt32(Console.ReadLine());
 
     Console.Write($"{array[i]} ");
   }
+List<string> Limit = new List<string>();
+for (int i = 0; i < n; i++)
+  {
+   
+    string count = array[i];
+    if (count.Length >=3)
+    {
+      Limit = new List<string>() {count};
+    }
+
+    Console.Write($"{array[i]} ");
+  }
+  Console.WriteLine();
